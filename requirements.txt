@@ -1,6 +1,6 @@
 beautifulsoup4==4.9.3
 requests==2.25.1
-nltk==3.5
+nltk==3.6.6
 # tqdm==4.56.0
 language-tool-python==2.5.1
 tweepy==3.10.0
