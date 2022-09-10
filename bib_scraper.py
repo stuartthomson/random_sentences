@@ -21,7 +21,7 @@ def main() -> int:
     for tag in tqdm(result):
         if tag.name == 'h1' and 'Gutenberg' not in tag.text:
             book_name = tag.text.strip()
-            book_file = open(f'data/{book_name}.txt', 'w')
+            book_file = open(f'data/bible/{book_name}.txt', 'w')
             started = True
         elif tag.name == 'p' and 'Chapter' not in tag.text and started:
             string = tag.text.strip().replace('\r\n      ', ' ')
